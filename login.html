@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio de Sesión</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+  <!-- Cabecera -->
+  <header>
+    <img src="img/logo.png" alt="Logo Mario Metidieri Gómez" class="logo-header">
+    <h1 data-es="Área privada — Mario Metidieri Gómez" data-en="Private area — Mario Metidieri Gómez">Área privada — Mario Metidieri Gómez</h1>
+    <p data-es="Accede con tus credenciales para ver contenido exclusivo" data-en="Log in with your credentials to access exclusive content">Accede con tus credenciales para ver contenido exclusivo</p>
+  </header>
+
+  <!-- Menú -->
+  <div id="menu">
+    <a href="TareaFinal_Mario_Metidieri_Gomez.html" data-es="← Inicio" data-en="← Home">← Inicio</a>
+    <div id="login">
+      <a href="registro.html" class="btn-registro" data-es="Registrarse" data-en="Sign up">Registrarse</a>
+      <button id="btn-idioma" class="btn-idioma">🇬🇧 EN</button>
+    </div>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="contenedor">
+    <div class="login-box">
+      <h2 data-es="Accede" data-en="Log in">Accede</h2>
+      <form>
+        <label for="usuario" data-es="Usuario:" data-en="Username:">Usuario:</label>
+        <input type="text" id="usuario" name="usuario" placeholder="Usuario" required>
+
+        <label for="password" data-es="Contraseña:" data-en="Password:">Contraseña:</label>
+        <input type="password" id="password" name="password" placeholder="Contraseña" required>
+
+        <button type="submit" data-es="Entrar" data-en="Log in">Entrar</button>
+      </form>
+      <p class="link-login">
+        <a href="registro.html" data-es="¿No tienes cuenta? Regístrate" data-en="Don't have an account? Sign up">¿No tienes cuenta? Regístrate</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    <p data-es="Sígueme en redes:" data-en="Follow me:">Sígueme en redes:</p>
+    <p class="redes">
+      <a href="#">Instagram |</a>
+      <a href="#">LinkedIn |</a>
+      <a href="#">GitHub</a>
+    </p>
+    <p class="footer-license"><a href="TareaFinal_Mario_Metidieri_Gomez.html">El Portfolio de Mario</a> © 2026 by <a href="TareaFinal_Mario_Metidieri_Gomez.html">Mario Metidieri Gómez</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></p>
+  </footer>
+  <script src="idioma.js"></script>
+</body>
+</html>

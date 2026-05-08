@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro — Mario Metidieri Gómez</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+  <!-- Cabecera -->
+  <header>
+    <img src="img/logo.png" alt="Logo Mario Metidieri Gómez" class="logo-header">
+    <h1 data-es="Crear cuenta" data-en="Create account">Crear cuenta</h1>
+    <p data-es="Regístrate para acceder a contenido exclusivo" data-en="Sign up to access exclusive content">Regístrate para acceder a contenido exclusivo</p>
+  </header>
+
+  <!-- Menú -->
+  <div id="menu">
+    <a href="TareaFinal_Mario_Metidieri_Gomez.html" data-es="← Inicio" data-en="← Home">← Inicio</a>
+    <div id="login">
+      <a href="login.html" data-es="Iniciar sesión" data-en="Log in">Iniciar sesión</a>
+      <button id="btn-idioma" class="btn-idioma">🇬🇧 EN</button>
+    </div>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="contenedor">
+    <div class="login-box">
+      <h2 data-es="Crear cuenta" data-en="Create account">Crear cuenta</h2>
+      <form>
+        <label for="nombre" data-es="Nombre completo:" data-en="Full name:">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+
+        <label for="email" data-es="Correo electrónico:" data-en="Email:">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+
+        <label for="password" data-es="Contraseña:" data-en="Password:">Contraseña:</label>
+        <input type="password" id="password" name="password" placeholder="Crea una contraseña" required>
+
+        <label for="password2" data-es="Confirmar contraseña:" data-en="Confirm password:">Confirmar contraseña:</label>
+        <input type="password" id="password2" name="password2" placeholder="Repite la contraseña" required>
+
+        <label class="label-checkbox">
+          <input type="checkbox" required>
+          <span data-es="Acepto los términos y condiciones" data-en="I accept the terms and conditions">Acepto los términos y condiciones</span>
+        </label>
+
+        <button type="submit" data-es="Crear cuenta" data-en="Create account">Crear cuenta</button>
+      </form>
+      <p class="link-login">
+        <a href="login.html" data-es="¿Ya tienes cuenta? Inicia sesión" data-en="Already have an account? Log in">¿Ya tienes cuenta? Inicia sesión</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    <p data-es="Sígueme en redes:" data-en="Follow me:">Sígueme en redes:</p>
+    <p class="redes">
+      <a href="#">Instagram |</a>
+      <a href="#">LinkedIn |</a>
+      <a href="#">GitHub</a>
+    </p>
+    <p class="footer-license"><a href="TareaFinal_Mario_Metidieri_Gomez.html">El Portfolio de Mario</a> © 2026 by <a href="TareaFinal_Mario_Metidieri_Gomez.html">Mario Metidieri Gómez</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></p>
+  </footer>
+  <script src="idioma.js"></script>
+</body>
+</html>

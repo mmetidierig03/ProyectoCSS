@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Mario Metidieri Gómez</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+  <!-- Cabecera -->
+  <header>
+    <img src="img/logo.png" alt="Logo Mario Metidieri Gómez" class="logo-header">
+    <p data-es="Desarrollador Web · Apasionado por crear interfaces limpias y experiencias digitales intuitivas" data-en="Web Developer · Passionate about creating clean interfaces and intuitive digital experiences">Desarrollador Web · Apasionado por crear interfaces limpias y experiencias digitales intuitivas</p>
+  </header>
+
+  <!-- Menú -->
+  <div id="menu">
+    <a href="#proyectos" data-es="Proyectos" data-en="Projects">Proyectos</a>
+    <a href="#sobre_mi" data-es="Sobre mí" data-en="About me">Sobre mí</a>
+    <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
+    <div id="login">
+      <a href="registro.html" class="btn-registro" data-es="Registrarse" data-en="Sign up">Registrarse</a>
+      <a href="login.html" data-es="Iniciar sesión" data-en="Log in">Iniciar sesión</a>
+      <button id="btn-idioma" class="btn-idioma">🇬🇧 EN</button>
+    </div>
+  </div>
+
+  <!-- Proyectos -->
+  <div id="bloque_proyectos">
+    <h2 data-es="Mis Proyectos" data-en="My Projects">Mis Proyectos</h2>
+    <p data-es="Una selección de los trabajos en los que he participado durante mi formación y práctica personal." data-en="A selection of projects I have worked on during my training and personal practice.">Una selección de los trabajos en los que he participado durante mi formación y práctica personal.</p>
+    <div id="proyectos">
+      <div class="proyecto">
+        <h3>BASS BOOK</h3>
+        <a href="Proyecto1.html" data-es="Ver proyecto" data-en="View project">Ver proyecto</a>
+      </div>
+      <div class="proyecto">
+        <h3>EcoTienda</h3>
+        <a href="Proyecto2.html" data-es="Ver proyecto" data-en="View project">Ver proyecto</a>
+      </div>
+      <div class="proyecto">
+        <h3>TravelBlog</h3>
+        <a href="Proyecto3.html" data-es="Ver proyecto" data-en="View project">Ver proyecto</a>
+      </div>
+      <div class="proyecto">
+        <h3>AppRecetas</h3>
+        <a href="Proyecto4.html" data-es="Ver proyecto" data-en="View project">Ver proyecto</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sobre mí -->
+  <div id="sobre_mi">
+    <h2 data-es="Sobre mí" data-en="About me">Sobre mí</h2>
+    <p data-es="Soy Mario Metidieri Gómez, estudiante de Desarrollo de Aplicaciones Web con especial interés en el diseño de interfaces y la experiencia de usuario." data-en="I am Mario Metidieri Gómez, a Web Application Development student with a special interest in interface design and user experience.">Soy Mario Metidieri Gómez, estudiante de Desarrollo de Aplicaciones Web con especial interés en el diseño de interfaces y la experiencia de usuario.</p>
+    <p data-es="Me gusta trabajar con HTML y CSS para construir páginas bien estructuradas y visualmente cuidadas. En mis proyectos intento combinar claridad, funcionalidad y un buen uso del color y la tipografía." data-en="I enjoy working with HTML and CSS to build well-structured and visually polished pages. In my projects I aim to combine clarity, functionality and good use of colour and typography.">Me gusta trabajar con HTML y CSS para construir páginas bien estructuradas y visualmente cuidadas. En mis proyectos intento combinar claridad, funcionalidad y un buen uso del color y la tipografía.</p>
+    <p><strong data-es="Habilidades:" data-en="Skills:">Habilidades:</strong> HTML5 · CSS3 · Diseño responsivo · Figma · Git</p>
+  </div>
+
+  <!-- Contacto -->
+  <div id="contacto">
+    <h2 data-es="Contacto" data-en="Contact">Contacto</h2>
+    <form>
+      <label for="nombre" data-es="Nombre:" data-en="Name:">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+      <label for="email" data-es="Correo electrónico:" data-en="Email:">Correo electrónico:</label>
+      <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+
+      <label for="mensaje" data-es="Mensaje:" data-en="Message:">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+
+      <button type="submit" data-es="Enviar" data-en="Send">Enviar</button>
+    </form>
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    <p data-es="Sígueme en redes:" data-en="Follow me:">Sígueme en redes:</p>
+    <p class="redes">
+      <a href="#">Instagram |</a>
+      <a href="#">LinkedIn |</a>
+      <a href="#">GitHub</a>
+    </p>
+    <p class="footer-license"><a href="TareaFinal_Mario_Metidieri_Gomez.html">El Portfolio de Mario</a> © 2026 by <a href="TareaFinal_Mario_Metidieri_Gomez.html">Mario Metidieri Gómez</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></p>
+  </footer>
+  <script src="idioma.js"></script>
+</body>
+</html>

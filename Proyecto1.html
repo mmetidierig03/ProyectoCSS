@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BASS BOOK — Mario Metidieri Gómez</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+  <header>
+    <img src="img/logo.png" alt="Logo Mario Metidieri Gómez" class="logo-header">
+    <h1>BASS BOOK</h1>
+    <p data-es="Red social de pesca deportiva — Trabajo de Fin de Grado DAW" data-en="Sports fishing social network — DAW Final Year Project">Red social de pesca deportiva — Trabajo de Fin de Grado DAW</p>
+  </header>
+
+  <!-- Menú -->
+  <div id="menu">
+    <a href="TareaFinal_Mario_Metidieri_Gomez.html" data-es="← Volver al portfolio" data-en="← Back to portfolio">← Volver al portfolio</a>
+    <div id="login">
+      <a href="registro.html" class="btn-registro" data-es="Registrarse" data-en="Sign up">Registrarse</a>
+      <a href="login.html" data-es="Iniciar sesión" data-en="Log in">Iniciar sesión</a>
+      <button id="btn-idioma" class="btn-idioma">🇬🇧 EN</button>
+    </div>
+  </div>
+
+  <!-- Bloque principal: vídeo + descripción -->
+  <div class="contenedor">
+    <div class="cuadro">
+      <video controls preload="metadata">
+        <source src="img/video/bassbook.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="info">
+      <h2 data-es="Descripción del proyecto" data-en="Project description">Descripción del proyecto</h2>
+      <p data-es="BASS BOOK es una red social temática desarrollada como Trabajo de Fin de Grado del Ciclo Superior de Desarrollo de Aplicaciones Web. Está orientada a pescadores deportivos de Extremadura y busca centralizar en una sola plataforma todo lo que un pescador necesita: compartir capturas, conectar con otros aficionados, descubrir nuevos spots y competir en ligas privadas." data-en="BASS BOOK is a themed social network developed as a Final Year Project for the Higher Degree in Web Application Development. It targets sport anglers in Extremadura and aims to bring together on a single platform everything a fisherman needs: sharing catches, connecting with other enthusiasts, discovering new spots and competing in private leagues.">BASS BOOK es una red social temática desarrollada como Trabajo de Fin de Grado del Ciclo Superior de Desarrollo de Aplicaciones Web. Está orientada a pescadores deportivos de Extremadura y busca centralizar en una sola plataforma todo lo que un pescador necesita: compartir capturas, conectar con otros aficionados, descubrir nuevos spots y competir en ligas privadas.</p>
+      <p data-es="El proyecto parte de un problema real: los pescadores utilizan grupos de WhatsApp y foros genéricos para compartir capturas, lo que dificulta organizar la información y encontrar spots concretos. BASS BOOK resuelve esto con un feed social propio, un mapa interactivo con geolocalización de capturas y un sistema de ligas privadas con clasificación automática." data-en="The project addresses a real problem: anglers use WhatsApp groups and generic forums to share catches, making it hard to organise information and find specific spots. BASS BOOK solves this with its own social feed, an interactive map with catch geolocation and a private league system with automatic rankings.">El proyecto parte de un problema real: los pescadores utilizan grupos de WhatsApp y foros genéricos para compartir capturas, lo que dificulta organizar la información y encontrar spots concretos. BASS BOOK resuelve esto con un feed social propio, un mapa interactivo con geolocalización de capturas y un sistema de ligas privadas con clasificación automática.</p>
+      <p data-es="La arquitectura sigue el patrón MVC sobre PHP 8 con acceso a datos a través de PDO y una REST API propia consumida desde el frontend en JavaScript Vanilla. La base de datos MySQL consta de 14 tablas relacionadas que cubren usuarios, capturas, ligas, chats, notificaciones y estadísticas." data-en="The architecture follows the MVC pattern on PHP 8 with data access via PDO and a custom REST API consumed by a Vanilla JavaScript frontend. The MySQL database consists of 14 related tables covering users, catches, leagues, chats, notifications and statistics.">La arquitectura sigue el patrón MVC sobre PHP 8 con acceso a datos a través de PDO y una REST API propia consumida desde el frontend en JavaScript Vanilla. La base de datos MySQL consta de 14 tablas relacionadas que cubren usuarios, capturas, ligas, chats, notificaciones y estadísticas.</p>
+      <p><strong data-es="Año:" data-en="Year:">Año:</strong> 2025 &nbsp;|&nbsp; <strong data-es="Rol:" data-en="Role:">Rol:</strong> <span data-es="Desarrollo completo (full-stack)" data-en="Full-stack development">Desarrollo completo (full-stack)</span> &nbsp;|&nbsp; <strong data-es="Contexto:" data-en="Context:">Contexto:</strong> <span data-es="TFG — Ciclo DAW" data-en="Final Year Project — DAW">TFG — Ciclo DAW</span></p>
+    </div>
+  </div>
+
+  <!-- Funcionalidades principales -->
+  <div class="contenedor">
+    <div class="info">
+      <h2 data-es="Funcionalidades principales" data-en="Key features">Funcionalidades principales</h2>
+      <ul>
+        <li><strong data-es="Feed social:" data-en="Social feed:">Feed social:</strong> <span data-es="publicaciones de capturas con likes, comentarios y sistema de follows entre usuarios." data-en="catch posts with likes, comments and a user follow system.">publicaciones de capturas con likes, comentarios y sistema de follows entre usuarios.</span></li>
+        <li><strong data-es="Mapa interactivo:" data-en="Interactive map:">Mapa interactivo:</strong> <span data-es="geolocalización de capturas sobre OpenStreetMap con Leaflet.js; permite descubrir spots y filtrar por especie." data-en="catch geolocation on OpenStreetMap via Leaflet.js; lets users discover spots and filter by species.">geolocalización de capturas sobre OpenStreetMap con Leaflet.js; permite descubrir spots y filtrar por especie.</span></li>
+        <li><strong data-es="Chat en tiempo real:" data-en="Real-time chat:">Chat en tiempo real:</strong> <span data-es="mensajería directa entre usuarios con actualización automática mediante polling." data-en="direct messaging between users with automatic updates via polling.">mensajería directa entre usuarios con actualización automática mediante polling.</span></li>
+        <li><strong data-es="Ligas privadas:" data-en="Private leagues:">Ligas privadas:</strong> <span data-es="creación de competiciones cerradas con clasificación automática por peso o número de capturas." data-en="closed competitions with automatic rankings by weight or number of catches.">creación de competiciones cerradas con clasificación automática por peso o número de capturas.</span></li>
+        <li><strong data-es="Notificaciones in-app:" data-en="In-app notifications:">Notificaciones in-app:</strong> <span data-es="alertas de likes, comentarios, nuevos seguidores e invitaciones a ligas." data-en="alerts for likes, comments, new followers and league invitations.">alertas de likes, comentarios, nuevos seguidores e invitaciones a ligas.</span></li>
+        <li><strong data-es="Widget meteorológico:" data-en="Weather widget:">Widget meteorológico:</strong> <span data-es="datos de Open-Meteo integrados en el perfil y en la vista de mapa para consultar condiciones antes de salir." data-en="Open-Meteo data integrated in the profile and map view to check conditions before heading out.">datos de Open-Meteo integrados en el perfil y en la vista de mapa para consultar condiciones antes de salir.</span></li>
+        <li><strong data-es="Estadísticas con gráficos:" data-en="Statistics with charts:">Estadísticas con gráficos:</strong> <span data-es="historial de capturas del usuario representado con Chart.js (por especie, por mes, por zona)." data-en="user catch history displayed with Chart.js (by species, by month, by area).">historial de capturas del usuario representado con Chart.js (por especie, por mes, por zona).</span></li>
+        <li><strong data-es="Panel de administración:" data-en="Admin panel:">Panel de administración:</strong> <span data-es="gestión de usuarios, publicaciones y ligas con roles diferenciados." data-en="management of users, posts and leagues with separate roles.">gestión de usuarios, publicaciones y ligas con roles diferenciados.</span></li>
+      </ul>
+    </div>
+    <div class="cuadro">
+      <img
+        src="img/bassbook1.jpg.png"
+        srcset="img/bassbook1.jpg.png 800w"
+        sizes="(max-width: 600px) 100vw, 800px"
+        alt="Captura del proyecto Bass Book"
+        loading="lazy"
+        width="800"
+        height="500"
+      >
+    </div>
+  </div>
+
+  <!-- Tecnologías -->
+  <div class="contenedor">
+    <div class="cuadro">
+      <img
+        src="img/bassbook2.jpg.png"
+        srcset="img/bassbook2.jpg.png 800w"
+        sizes="(max-width: 600px) 100vw, 800px"
+        alt="Captura del proyecto Bass Book"
+        loading="lazy"
+        width="800"
+        height="500"
+      >
+    </div>
+    <div class="info">
+      <h2 data-es="Tecnologías utilizadas" data-en="Technologies used">Tecnologías utilizadas</h2>
+      <ul>
+        <li><strong data-es="Backend:" data-en="Backend:">Backend:</strong> <span data-es="PHP 8 con arquitectura MVC, PDO para acceso a base de datos y REST API propia." data-en="PHP 8 with MVC architecture, PDO for database access and a custom REST API.">PHP 8 con arquitectura MVC, PDO para acceso a base de datos y REST API propia.</span></li>
+        <li><strong data-es="Base de datos:" data-en="Database:">Base de datos:</strong> <span data-es="MySQL con 14 tablas relacionadas; desplegada tanto en XAMPP (desarrollo) como en AwardSpace (producción)." data-en="MySQL with 14 related tables; deployed on both XAMPP (development) and AwardSpace (production).">MySQL con 14 tablas relacionadas; desplegada tanto en XAMPP (desarrollo) como en AwardSpace (producción).</span></li>
+        <li><strong data-es="Frontend:" data-en="Frontend:">Frontend:</strong> <span data-es="HTML5, CSS3 y JavaScript Vanilla; sin frameworks, para mantener el control total del código." data-en="HTML5, CSS3 and Vanilla JavaScript; no frameworks, to maintain full control of the code.">HTML5, CSS3 y JavaScript Vanilla; sin frameworks, para mantener el control total del código.</span></li>
+        <li><strong data-es="Mapas:" data-en="Maps:">Mapas:</strong> <span data-es="Leaflet.js sobre teselas de OpenStreetMap para el mapa de spots y geolocalización de capturas." data-en="Leaflet.js on OpenStreetMap tiles for the spots map and catch geolocation.">Leaflet.js sobre teselas de OpenStreetMap para el mapa de spots y geolocalización de capturas.</span></li>
+        <li><strong data-es="Tiempo y gráficos:" data-en="Weather and charts:">Tiempo y gráficos:</strong> <span data-es="API Open-Meteo para datos meteorológicos; Chart.js para visualización de estadísticas de pesca." data-en="Open-Meteo API for weather data; Chart.js for fishing statistics visualisation.">API Open-Meteo para datos meteorológicos; Chart.js para visualización de estadísticas de pesca.</span></li>
+        <li><strong data-es="Seguridad:" data-en="Security:">Seguridad:</strong> <span data-es="contraseñas hasheadas con bcrypt y protección contra CSRF mediante tokens por sesión." data-en="passwords hashed with bcrypt and CSRF protection via per-session tokens.">contraseñas hasheadas con bcrypt y protección contra CSRF mediante tokens por sesión.</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Retos y aprendizajes -->
+  <div class="contenedor">
+    <div class="info">
+      <h2 data-es="Retos encontrados" data-en="Challenges">Retos encontrados</h2>
+      <p data-es="El mayor reto técnico fue el chat en tiempo real sin WebSockets: la solución fue un sistema de polling cada dos segundos que consulta la API en busca de mensajes nuevos, minimizando la carga del servidor con consultas indexadas y devolviendo solo los mensajes posteriores al último ID recibido." data-en="The biggest technical challenge was real-time chat without WebSockets: the solution was a polling system every two seconds that queries the API for new messages, minimising server load with indexed queries and returning only messages after the last received ID.">El mayor reto técnico fue el chat en tiempo real sin WebSockets: la solución fue un sistema de polling cada dos segundos que consulta la API en busca de mensajes nuevos, minimizando la carga del servidor con consultas indexadas y devolviendo solo los mensajes posteriores al último ID recibido.</p>
+      <p data-es="Otro desafío fue el diseño de la base de datos para soportar las ligas privadas: una liga puede tener múltiples rondas, cada ronda tiene sus propias capturas puntuables y el sistema debe recalcular la clasificación de forma eficiente al añadir cada nueva captura. Se resolvió con una estructura de tres tablas relacionadas (liga, ronda, captura_liga) y vistas calculadas en MySQL." data-en="Another challenge was designing the database to support private leagues: a league can have multiple rounds, each round has its own scoring catches, and the system must efficiently recalculate rankings whenever a new catch is added. This was solved with a three-table structure (league, round, league_catch) and calculated views in MySQL.">Otro desafío fue el diseño de la base de datos para soportar las ligas privadas: una liga puede tener múltiples rondas, cada ronda tiene sus propias capturas puntuables y el sistema debe recalcular la clasificación de forma eficiente al añadir cada nueva captura. Se resolvió con una estructura de tres tablas relacionadas (liga, ronda, captura_liga) y vistas calculadas en MySQL.</p>
+      <h2 data-es="Resultado y aprendizajes" data-en="Results and learnings">Resultado y aprendizajes</h2>
+    </div>
+    <div class="cuadro">
+      <img
+        src="img/bassbook3.jpg.png"
+        srcset="img/bassbook3.jpg.png 800w"
+        sizes="(max-width: 600px) 100vw, 800px"
+        alt="Captura del proyecto Bass Book"
+        loading="lazy"
+        width="800"
+        height="500"
+      >
+    </div>
+  </div>
+
+  <!-- Navegación inferior -->
+  <div class="contenedor">
+    <p><a href="TareaFinal_Mario_Metidieri_Gomez.html" data-es="← Volver al portfolio" data-en="← Back to portfolio">← Volver al portfolio</a></p>
+  </div>
+
+  <footer>
+    <p data-es="Otros proyectos:" data-en="Other projects:">Otros proyectos:</p>
+    <p class="redes">
+      <a href="Proyecto2.html">EcoTienda |</a>
+      <a href="Proyecto3.html">TravelBlog |</a>
+      <a href="Proyecto4.html">AppRecetas</a>
+    </p>
+    <p data-es="Sígueme en redes:" data-en="Follow me:">Sígueme en redes:</p>
+    <p class="redes"><a href="#">Instagram |</a> <a href="#">LinkedIn |</a> <a href="#">GitHub</a></p>
+    <p class="footer-license"><a href="TareaFinal_Mario_Metidieri_Gomez.html">El Portfolio de Mario</a> © 2026 by <a href="TareaFinal_Mario_Metidieri_Gomez.html">Mario Metidieri Gómez</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></p>
+  </footer>
+  <script src="idioma.js"></script>
+</body>
+</html>
+

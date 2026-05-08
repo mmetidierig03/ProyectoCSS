@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AppRecetas — Mario Metidieri Gómez</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+  <header>
+    <img src="img/logo.png" alt="Logo Mario Metidieri Gómez" class="logo-header">
+    <h1>AppRecetas</h1>
+    <p data-es="Diseño de interfaz para una aplicación móvil de gestión de recetas" data-en="Interface design for a mobile recipe management app">Diseño de interfaz para una aplicación móvil de gestión de recetas</p>
+  </header>
+
+  <!-- Menú -->
+  <div id="menu">
+    <a href="TareaFinal_Mario_Metidieri_Gomez.html" data-es="← Volver al portfolio" data-en="← Back to portfolio">← Volver al portfolio</a>
+    <div id="login">
+      <a href="registro.html" class="btn-registro" data-es="Registrarse" data-en="Sign up">Registrarse</a>
+      <a href="login.html" data-es="Iniciar sesión" data-en="Log in">Iniciar sesión</a>
+      <button id="btn-idioma" class="btn-idioma">🇬🇧 EN</button>
+    </div>
+  </div>
+
+  <!-- Bloque principal: imagen + descripción -->
+  <div class="contenedor">
+    <div class="cuadro">
+      <img
+        src="img/apprecetas_1.jpg"
+        srcset="img/apprecetas_1.jpg 800w"
+        sizes="(max-width: 600px) 100vw, 800px"
+        alt="Pantalla principal de AppRecetas"
+        loading="lazy"
+        width="800"
+        height="500"
+      >
+    </div>
+    <div class="info">
+      <h2 data-es="Descripción del proyecto" data-en="Project description">Descripción del proyecto</h2>
+      <p data-es="AppRecetas es el diseño completo de interfaz de usuario para una aplicación móvil orientada a personas que cocinan habitualmente y quieren tener todas sus recetas organizadas en un único lugar. El punto de partida fue detectar que las soluciones existentes eran demasiado complejas para usuarios no técnicos o estaban pensadas para uso profesional." data-en="AppRecetas is the complete UI design for a mobile app aimed at people who cook regularly and want all their recipes organised in one place. The starting point was identifying that existing solutions were either too complex for non-technical users or designed for professional use.">AppRecetas es el diseño completo de interfaz de usuario para una aplicación móvil orientada a personas que cocinan habitualmente y quieren tener todas sus recetas organizadas en un único lugar. El punto de partida fue detectar que las soluciones existentes eran demasiado complejas para usuarios no técnicos o estaban pensadas para uso profesional.</p>
+      <p data-es="El proceso comenzó con un benchmark de las principales apps de recetas del mercado, identificando sus puntos fuertes y débiles desde la perspectiva del usuario doméstico. A continuación se realizaron entrevistas breves a cinco personas con distintos niveles de experiencia culinaria para entender qué información necesitan tener a mano mientras cocinan." data-en="The process began with a benchmark of the leading recipe apps on the market, identifying their strengths and weaknesses from a home-cook perspective. Brief interviews were then conducted with five people of varying culinary experience to understand what information they need at hand while cooking.">El proceso comenzó con un benchmark de las principales apps de recetas del mercado, identificando sus puntos fuertes y débiles desde la perspectiva del usuario doméstico. A continuación se realizaron entrevistas breves a cinco personas con distintos niveles de experiencia culinaria para entender qué información necesitan tener a mano mientras cocinan.</p>
+      <p data-es="Con esa investigación se definió el modelo de datos (receta, ingredientes, pasos, tiempo, dificultad, etiquetas) y se diseñó la arquitectura de navegación. Las pantallas se maquetaron primero en papel, luego en Figma con un sistema de componentes reutilizables para mantener coherencia visual en toda la app." data-en="From that research, the data model (recipe, ingredients, steps, time, difficulty, tags) was defined and the navigation architecture designed. Screens were first sketched on paper, then built in Figma using a reusable component system to maintain visual consistency throughout the app.">Con esa investigación se definió el modelo de datos (receta, ingredientes, pasos, tiempo, dificultad, etiquetas) y se diseñó la arquitectura de navegación. Las pantallas se maquetaron primero en papel, luego en Figma con un sistema de componentes reutilizables para mantener coherencia visual en toda la app.</p>
+      <p><strong data-es="Año:" data-en="Year:">Año:</strong> 2025 &nbsp;|&nbsp; <strong data-es="Rol:" data-en="Role:">Rol:</strong> UX Research + UI Design &nbsp;|&nbsp; <strong data-es="Duración:" data-en="Duration:">Duración:</strong> 5 semanas</p>
+      <p><a href="#" data-es="Ver prototipo en Figma →" data-en="View Figma prototype →">Ver prototipo en Figma →</a></p>
+    </div>
+  </div>
+
+  <!-- Características principales -->
+  <div class="contenedor">
+    <div class="info">
+      <h2 data-es="Características principales" data-en="Key features">Características principales</h2>
+      <ul>
+        <li><strong data-es="Modo cocina:" data-en="Cooking mode:">Modo cocina:</strong> <span data-es="pantalla simplificada con letra grande, pasos numerados y opción de mantener la pantalla encendida mientras se cocina." data-en="simplified screen with large text, numbered steps and an option to keep the screen on while cooking.">pantalla simplificada con letra grande, pasos numerados y opción de mantener la pantalla encendida mientras se cocina.</span></li>
+        <li><strong data-es="Buscador por ingredientes:" data-en="Ingredient-based search:">Buscador por ingredientes:</strong> <span data-es="el usuario introduce lo que tiene en la nevera y la app sugiere recetas posibles." data-en="the user enters what they have in the fridge and the app suggests matching recipes.">el usuario introduce lo que tiene en la nevera y la app sugiere recetas posibles.</span></li>
+        <li><strong data-es="Importación rápida de recetas:" data-en="Quick recipe import:">Importación rápida de recetas:</strong> <span data-es="flujo para añadir recetas desde texto libre o dictado de voz, con reconocimiento automático de ingredientes y cantidades." data-en="flow to add recipes from free text or voice dictation, with automatic recognition of ingredients and quantities.">flujo para añadir recetas desde texto libre o dictado de voz, con reconocimiento automático de ingredientes y cantidades.</span></li>
+        <li><strong data-es="Sistema de etiquetas personalizable:" data-en="Customisable tag system:">Sistema de etiquetas personalizable:</strong> <span data-es="el usuario crea sus propias categorías (favoritas, rápidas, sin gluten, para invitados, etc.)." data-en="users create their own categories (favourites, quick, gluten-free, for guests, etc.).">el usuario crea sus propias categorías (favoritas, rápidas, sin gluten, para invitados, etc.).</span></li>
+        <li><strong data-es="Planificador semanal:" data-en="Weekly meal planner:">Planificador semanal:</strong> <span data-es="pantalla de calendario donde arrastrar recetas a cada día, con generación automática de la lista de la compra." data-en="calendar screen where recipes can be dragged to each day, with automatic shopping list generation.">pantalla de calendario donde arrastrar recetas a cada día, con generación automática de la lista de la compra.</span></li>
+        <li><strong data-es="Escala de porciones:" data-en="Serving scaler:">Escala de porciones:</strong> <span data-es="botones de + / - en cada receta que ajustan las cantidades de ingredientes automáticamente." data-en="+ / - buttons on each recipe that automatically adjust ingredient quantities.">botones de + / - en cada receta que ajustan las cantidades de ingredientes automáticamente.</span></li>
+      </ul>
+    </div>
+    <div class="cuadro">
+      <img
+        src="img/apprecetas_2.jpg"
+        srcset="img/apprecetas_2.jpg 800w"
+        sizes="(max-width: 600px) 100vw, 800px"
+        alt="Pantalla de búsqueda por ingredientes"
+        loading="lazy"
+        width="800"
+        height="500"
+      >
+    </div>
+  </div>
+
+  <!-- Tecnologías -->
+  <div class="contenedor">
+    <div class="cuadro">
+      <img
+        src="img/apprecetas_3.jpg"
+        srcset="img/apprecetas_3.jpg 800w"
+        sizes="(max-width: 600px) 100vw, 800px"
+        alt="Sistema de componentes en Figma"
+        loading="lazy"
+        width="800"
+        height="500"
+      >
+    </div>
+    <div class="info">
+      <h2 data-es="Tecnologías y herramientas" data-en="Technologies and tools">Tecnologías y herramientas</h2>
+      <ul>
+        <li><strong data-es="Figma:" data-en="Figma:">Figma:</strong> <span data-es="diseño de todas las pantallas, sistema de componentes con variantes y prototipo interactivo con transiciones de pantalla y overlays." data-en="design of all screens, component system with variants and an interactive prototype with screen transitions and overlays.">diseño de todas las pantallas, sistema de componentes con variantes y prototipo interactivo con transiciones de pantalla y overlays.</span></li>
+        <li><strong data-es="FigJam:" data-en="FigJam:">FigJam:</strong> <span data-es="mapa de experiencia de usuario, diagrama de flujo de navegación y tablero de inspiración visual (moodboard)." data-en="user experience map, navigation flowchart and visual inspiration board (moodboard).">mapa de experiencia de usuario, diagrama de flujo de navegación y tablero de inspiración visual (moodboard).</span></li>
+        <li><strong data-es="Adobe XD:" data-en="Adobe XD:">Adobe XD:</strong> <span data-es="versión alternativa del prototipo exportada para presentación al cliente con las animaciones de transición." data-en="alternative prototype version exported for client presentation with transition animations.">versión alternativa del prototipo exportada para presentación al cliente con las animaciones de transición.</span></li>
+        <li><strong data-es="Maze (herramienta de test):" data-en="Maze (testing tool):">Maze (herramienta de test):</strong> <span data-es="envío del prototipo a usuarios reales para recabar datos de usabilidad sin necesidad de sesiones presenciales." data-en="sending the prototype to real users to gather usability data without in-person sessions.">envío del prototipo a usuarios reales para recabar datos de usabilidad sin necesidad de sesiones presenciales.</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Retos y aprendizajes -->
+  <div class="contenedor">
+    <div class="info">
+      <h2 data-es="Retos encontrados" data-en="Challenges">Retos encontrados</h2>
+      <p data-es="El mayor reto de diseño fue el modo cocina: el usuario tiene las manos sucias o mojadas y necesita interactuar con el teléfono de forma mínima. Después de varias iteraciones se optó por un diseño de pantalla completa con botones muy grandes en la parte inferior de la pantalla, zonas táctiles amplias y la posibilidad de avanzar al siguiente paso con un gesto de deslizamiento horizontal." data-en="The biggest design challenge was cooking mode: the user's hands are dirty or wet and they need minimal interaction with the phone. After several iterations, a full-screen design was chosen with very large buttons at the bottom, wide touch targets and the ability to advance to the next step with a horizontal swipe.">El mayor reto de diseño fue el "modo cocina": el usuario tiene las manos sucias o mojadas y necesita interactuar con el teléfono de forma mínima. Después de varias iteraciones se optó por un diseño de pantalla completa con botones muy grandes en la parte inferior de la pantalla, zonas táctiles amplias y la posibilidad de avanzar al siguiente paso con un gesto de deslizamiento horizontal.</p>
+      <p data-es="Otro desafío fue la importación de recetas desde texto libre. Definir cómo presentar el resultado del parsing de forma comprensible fue más complejo de lo esperado. La solución fue un paso de revisión donde el usuario confirma o corrige cada campo antes de guardar." data-en="Another challenge was importing recipes from free text. Defining how to present the parsing result in an understandable way turned out to be more complex than expected. The solution was a review step where the user confirms or corrects each field before saving.">Otro desafío fue la importación de recetas desde texto libre. Definir cómo presentar el resultado del parsing (cuando la app interpreta el texto) de forma comprensible fue más complejo de lo esperado. La solución fue un paso de revisión donde el usuario confirma o corrige cada campo antes de guardar.</p>
+      <h2 data-es="Resultado y aprendizajes" data-en="Results and learnings">Resultado y aprendizajes</h2>
+    </div>
+    <div class="cuadro">
+      <img
+        src="img/apprecetas_4.jpg"
+        srcset="img/apprecetas_4.jpg 800w"
+        sizes="(max-width: 600px) 100vw, 800px"
+        alt="Modo cocina de AppRecetas"
+        loading="lazy"
+        width="800"
+        height="500"
+      >
+    </div>
+  </div>
+
+  <!-- Navegación inferior -->
+  <div class="contenedor">
+    <p><a href="TareaFinal_Mario_Metidieri_Gomez.html" data-es="← Volver al portfolio" data-en="← Back to portfolio">← Volver al portfolio</a></p>
+  </div>
+
+  <footer>
+    <p data-es="Otros proyectos:" data-en="Other projects:">Otros proyectos:</p>
+    <p class="redes">
+      <a href="Proyecto1.html">BASS BOOK |</a>
+      <a href="Proyecto2.html">EcoTienda |</a>
+      <a href="Proyecto3.html">TravelBlog</a>
+    </p>
+    <p data-es="Sígueme en redes:" data-en="Follow me:">Sígueme en redes:</p>
+    <p class="redes"><a href="#">Instagram |</a> <a href="#">LinkedIn |</a> <a href="#">GitHub</a></p>
+    <p class="footer-license"><a href="TareaFinal_Mario_Metidieri_Gomez.html">El Portfolio de Mario</a> © 2026 by <a href="TareaFinal_Mario_Metidieri_Gomez.html">Mario Metidieri Gómez</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></p>
+  </footer>
+  <script src="idioma.js"></script>
+</body>
+</html>
+
