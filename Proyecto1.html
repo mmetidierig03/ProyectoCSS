@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BASS BOOK — Mario Metidieri Gómez</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="estilos.css">
   <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
@@ -16,6 +17,7 @@
 
   <!-- Menú -->
   <div id="menu">
+    <button id="btn-hamburguesa" aria-label="Abrir menú">☰</button>
     <a href="TareaFinal_Mario_Metidieri_Gomez.html" data-es="← Volver al portfolio" data-en="← Back to portfolio">← Volver al portfolio</a>
     <div id="login">
       <a href="registro.html" class="btn-registro" data-es="Registrarse" data-en="Sign up">Registrarse</a>
@@ -27,9 +29,12 @@
   <!-- Bloque principal: vídeo + descripción -->
   <div class="contenedor">
     <div class="cuadro">
-      <video controls preload="metadata">
+      <video id="video-pagina" controls preload="metadata">
         <source src="img/video/bassbook.mp4" type="video/mp4">
       </video>
+      <button class="btn-transcripcion" onclick="abrirTranscripcion()">
+        📄 Ver transcripción
+      </button>
     </div>
     <div class="info">
       <h2 data-es="Descripción del proyecto" data-en="Project description">Descripción del proyecto</h2>
@@ -132,6 +137,63 @@
     <p class="footer-license"><a href="TareaFinal_Mario_Metidieri_Gomez.html">El Portfolio de Mario</a> © 2026 by <a href="TareaFinal_Mario_Metidieri_Gomez.html">Mario Metidieri Gómez</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></p>
   </footer>
   <script src="idioma.js"></script>
+
+  <!-- Modal Transcripción -->
+  <div id="modal-transcripcion" class="modal-overlay" onclick="cerrarTranscripcionOverlay(event)">
+    <div class="modal-caja">
+      <button class="modal-cerrar" onclick="cerrarTranscripcion()">×</button>
+      <video id="video-modal" controls preload="metadata">
+        <source src="img/video/bassbook.mp4" type="video/mp4">
+      </video>
+      <div class="transcripcion-texto">
+        <h3>Transcripción del vídeo</h3>
+
+        <p><strong>Introducción:</strong> Buenas, soy Mario y os voy a enseñar el proyecto que estoy haciendo para fin de curso. Esta web trata sobre una red social destinada sobre todo a pescadores.</p>
+
+        <p><strong>Pantalla de inicio y acceso:</strong> Esta es la pantalla de inicio. Desde aquí podemos iniciar sesión o registrarnos si no tenemos cuenta. Vamos a iniciar sesión rápido.</p>
+
+        <p><strong>Perfil y estadísticas:</strong> Una vez iniciada la sesión, podemos ver nuestro perfil con nuestras estadísticas: posts realizados, seguidores y personas a las que seguimos.</p>
+
+        <p><strong>Chat comunitario y meteorología:</strong> Hay un chat comunitario donde todo el mundo puede hablar. También tengo integrado un apartado del tiempo: si cambias tu ubicación, el meteograma se actualiza automáticamente para mostrar el tiempo de esa zona.</p>
+
+        <p><strong>Posts y mapa de capturas:</strong> Los posts muestran las capturas de los usuarios. Por ejemplo, tengo un post de hace unos días con dos peces que saqué en Orellana. En cada post puedes marcar en un mapa el punto exacto donde pescaste, dar like, comentar o eliminar el post si es tuyo. Desde otras cuentas también puedes compartir y comentar los posts de otros usuarios.</p>
+
+        <p><strong>Publicar un post:</strong> A la hora de publicar, puedes seleccionar el embalse, la especie del pez, contar lo que has pescado, subir una foto y marcar opcionalmente el pantano en el mapa.</p>
+
+        <p><strong>Mapa general y estadísticas:</strong> Hay un mapa global donde se ven todas las capturas registradas. Cada post con ubicación aparece como un marcador. En el apartado de estadísticas puedes ver las personas que han publicado capturas, los me gustas totales, comentarios escritos, pescadores registrados, la especie más capturada, los días con más actividad y los embalses con mayor actividad pesquera.</p>
+
+        <p><strong>Sistema de ligas:</strong> Hay un apartado de ligas pensado para torneos entre amigos, algo muy habitual en la pesca. Los usuarios pueden crear una liga, establecer un bote entre todos, unirse con un código, organizar mangas cada dos o tres semanas en distintos pantanos y clasificarse según las especies capturadas y los kilos pesados. Cada liga tiene su propio chat interno y el ganador se lleva los premios.</p>
+
+        <p><strong>Configuración de perfil:</strong> Por último, puedes editar tu perfil: biografía, foto de perfil, especie favorita y ubicación.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function abrirTranscripcion() {
+      document.getElementById('modal-transcripcion').classList.add('activo');
+      document.getElementById('video-pagina').pause();
+      document.addEventListener('keydown', cerrarConEscape);
+    }
+
+    function cerrarTranscripcion() {
+      document.getElementById('modal-transcripcion').classList.remove('activo');
+      document.getElementById('video-modal').pause();
+      document.removeEventListener('keydown', cerrarConEscape);
+    }
+
+    function cerrarTranscripcionOverlay(event) {
+      if (event.target === document.getElementById('modal-transcripcion')) {
+        cerrarTranscripcion();
+      }
+    }
+
+    function cerrarConEscape(event) {
+      if (event.key === 'Escape') {
+        cerrarTranscripcion();
+      }
+    }
+  </script>
 </body>
 </html>
 

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio — Mario Metidieri Gómez</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="estilos.css">
   <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
@@ -16,6 +17,7 @@
 
   <!-- Menú -->
   <div id="menu">
+    <button id="btn-hamburguesa" aria-label="Abrir menú">☰</button>
     <a href="#bloque_proyectos" data-es="Proyectos" data-en="Projects">Proyectos</a>
     <a href="#sobre_mi" data-es="Sobre mí" data-en="About me">Sobre mí</a>
     <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
@@ -34,18 +36,45 @@
       <div class="proyecto">
         <h3>BASS BOOK</h3>
         <a href="Proyecto1.html" data-es="Ver proyecto" data-en="View project">Ver proyecto</a>
+        <div class="mt-2">
+          <span class="badge" style="background-color:#4191B6">PHP</span>
+          <span class="badge" style="background-color:#4191B6">MySQL</span>
+          <span class="badge" style="background-color:#4191B6">JavaScript</span>
+          <span class="badge" style="background-color:#4191B6">HTML</span>
+          <span class="badge" style="background-color:#4191B6">CSS</span>
+          <span class="badge" style="background-color:#4191B6">REST API</span>
+        </div>
       </div>
       <div class="proyecto">
         <h3>EcoTienda</h3>
         <a href="Proyecto2.html" data-es="Ver proyecto" data-en="View project">Ver proyecto</a>
+        <div class="mt-2">
+          <span class="badge" style="background-color:#4191B6">Figma</span>
+          <span class="badge" style="background-color:#4191B6">HTML</span>
+          <span class="badge" style="background-color:#4191B6">CSS</span>
+          <span class="badge" style="background-color:#4191B6">UX/UI</span>
+          <span class="badge" style="background-color:#4191B6">FigJam</span>
+        </div>
       </div>
       <div class="proyecto">
         <h3>TravelBlog</h3>
         <a href="Proyecto3.html" data-es="Ver proyecto" data-en="View project">Ver proyecto</a>
+        <div class="mt-2">
+          <span class="badge" style="background-color:#4191B6">HTML</span>
+          <span class="badge" style="background-color:#4191B6">CSS Grid</span>
+          <span class="badge" style="background-color:#4191B6">CSS3</span>
+          <span class="badge" style="background-color:#4191B6">Diseño Editorial</span>
+        </div>
       </div>
       <div class="proyecto">
         <h3>AppRecetas</h3>
         <a href="Proyecto4.html" data-es="Ver proyecto" data-en="View project">Ver proyecto</a>
+        <div class="mt-2">
+          <span class="badge" style="background-color:#4191B6">Figma</span>
+          <span class="badge" style="background-color:#4191B6">UX Research</span>
+          <span class="badge" style="background-color:#4191B6">Adobe XD</span>
+          <span class="badge" style="background-color:#4191B6">Maze</span>
+        </div>
       </div>
     </div>
   </div>
@@ -72,6 +101,12 @@
       <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
 
       <button type="submit" data-es="Enviar" data-en="Send">Enviar</button>
+      <div class="alert alert-success d-none" id="msg-exito" role="alert">
+        ¡Mensaje enviado correctamente!
+      </div>
+      <div class="alert alert-danger d-none" id="msg-error" role="alert">
+        Hubo un error. Inténtalo de nuevo.
+      </div>
     </form>
   </div>
 

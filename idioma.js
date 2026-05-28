@@ -24,4 +24,20 @@ document.addEventListener('DOMContentLoaded', function() {
       aplicarIdioma(idiomaActual === 'es' ? 'en' : 'es');
     });
   }
+
+  // Menú hamburguesa
+  var btnHamburguesa = document.getElementById('btn-hamburguesa');
+  if (btnHamburguesa) {
+    btnHamburguesa.addEventListener('click', function() {
+      var menu = document.getElementById('menu');
+      var abierto = menu.classList.toggle('menu-abierto');
+      btnHamburguesa.textContent = abierto ? '✕' : '☰';
+    });
+    document.querySelectorAll('#menu > a').forEach(function(enlace) {
+      enlace.addEventListener('click', function() {
+        document.getElementById('menu').classList.remove('menu-abierto');
+        btnHamburguesa.textContent = '☰';
+      });
+    });
+  }
 });

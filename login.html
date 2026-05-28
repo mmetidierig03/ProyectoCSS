@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inicio de Sesión</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="estilos.css">
   <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
@@ -17,6 +18,7 @@
 
   <!-- Menú -->
   <div id="menu">
+    <button id="btn-hamburguesa" aria-label="Abrir menú">☰</button>
     <a href="TareaFinal_Mario_Metidieri_Gomez.html" data-es="← Inicio" data-en="← Home">← Inicio</a>
     <div id="login">
       <a href="registro.html" class="btn-registro" data-es="Registrarse" data-en="Sign up">Registrarse</a>
@@ -36,6 +38,12 @@
         <input type="password" id="password" name="password" placeholder="Contraseña" required>
 
         <button type="submit" data-es="Entrar" data-en="Log in">Entrar</button>
+        <div class="alert alert-success d-none" id="msg-exito" role="alert">
+          ¡Mensaje enviado correctamente!
+        </div>
+        <div class="alert alert-danger d-none" id="msg-error" role="alert">
+          Hubo un error. Inténtalo de nuevo.
+        </div>
       </form>
       <p class="link-login">
         <a href="registro.html" data-es="¿No tienes cuenta? Regístrate" data-en="Don't have an account? Sign up">¿No tienes cuenta? Regístrate</a>
